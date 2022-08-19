@@ -26,7 +26,7 @@ local function Toggle(toggle)
 	TriggerEvent('chat:addMessage', 'Your Ping is ' .. (display and 'Visible' or 'Hidden'))
 end
 
-RegisterNetEvent('ping:receive', function(ping) curPing = ping end)
+RegisterNetEvent('ping:receive', function(ping) great = ping end)
 
 Citizen.CreateThread(function() -- Get ping from server every 5s
 	while true do
